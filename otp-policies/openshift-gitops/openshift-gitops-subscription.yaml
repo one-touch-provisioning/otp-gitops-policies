@@ -434,10 +434,10 @@ roleRef:
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: openshift-gitops-cntk-argocd-application-controller
+  name: otp-gitops-argocd-application-controller
 subjects:
   - kind: ServiceAccount
-    name: openshift-gitops-cntk-argocd-application-controller
+    name: otp-gitops-argocd-application-controller
     namespace: openshift-gitops
 roleRef:
   apiGroup: rbac.authorization.k8s.io
@@ -447,10 +447,10 @@ roleRef:
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: openshift-gitops-cntk-argocd-application-controller-acm
+  name: otp-gitops-argocd-application-controller-acm
 subjects:
   - kind: ServiceAccount
-    name: openshift-gitops-cntk-argocd-application-controller
+    name: otp-gitops-argocd-application-controller
     namespace: openshift-gitops
 roleRef:
   apiGroup: rbac.authorization.k8s.io
@@ -460,10 +460,10 @@ roleRef:
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: openshift-gitops-cntk-argocd-application-controller-kubevirt
+  name: otp-gitops-argocd-application-controller-kubevirt
 subjects:
   - kind: ServiceAccount
-    name: openshift-gitops-cntk-argocd-application-controller
+    name: otp-gitops-argocd-application-controller
     namespace: openshift-gitops
 roleRef:
   apiGroup: rbac.authorization.k8s.io
@@ -473,7 +473,7 @@ roleRef:
 apiVersion: argoproj.io/v1alpha1
 kind: ArgoCD
 metadata:
-  name: openshift-gitops-cntk
+  name: otp-gitops
   namespace: openshift-gitops
 spec:
   server:
