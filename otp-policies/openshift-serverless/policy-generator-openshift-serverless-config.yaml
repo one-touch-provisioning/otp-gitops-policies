@@ -5,9 +5,9 @@ metadata:
 policyDefaults:
   namespace: policies
   placement:
-    placementRulePath: ./managed-clusters-placementrule.yaml
+    placementRulePath: placementrules
   remediationAction: enforce
 policies:
   - name: install-openshift-serverless
     manifests:
-      - path: ./openshift-serverless-subscription.yaml
+      - path: subscriptions
