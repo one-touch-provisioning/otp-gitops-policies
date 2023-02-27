@@ -1,5 +1,6 @@
 generators:
-  - policy-generator-openshift-gitops.yaml
+  - policy-generator-lso.yaml
+commonLabels:
+  manifest-group: install-lso-operator
 commonAnnotations:
   argocd.argoproj.io/compare-options: IgnoreExtraneous
-
