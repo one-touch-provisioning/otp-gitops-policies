@@ -3,7 +3,7 @@ kind: PolicyGenerator
 metadata:
   name: install-openshift-serverless
 policyDefaults:
-  namespace: policies
+  namespace: rhacm-policies
   placement:
     placementRulePath: placementrules
   remediationAction: enforce
